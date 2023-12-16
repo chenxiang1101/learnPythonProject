@@ -15,5 +15,5 @@ try:
         while inputNum != 1:
             inputNum = collatz(inputNum)
 except ValueError:
-    print("你输入的不是正整数，程序结束")
+    print("你输入的不是正整数，程序结束！")
 
