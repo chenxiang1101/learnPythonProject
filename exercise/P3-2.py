@@ -1,4 +1,4 @@
-def addListToDict(inventory,addItems):
+def addToInventory(inventory,addItems):
     for key in addItems:
         if key in inventory.keys():
             inventory[key] += 1
@@ -6,7 +6,7 @@ def addListToDict(inventory,addItems):
             inventory[key] = 1
     return inventory
 
-def displayInventory(dicList):
+def dispalyInventory(dicList):
     totalItem = 0
     for k,v in dicList.items():
         print(f"{v} {k}\n")
@@ -16,4 +16,4 @@ def displayInventory(dicList):
 inventory={'gold coin':42,'rope':1}
 addItems=['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
 
-displayInventory(addListToDict(inventory,addItems))
+dispalyInventory(addToInventory(inventory,addItems))
